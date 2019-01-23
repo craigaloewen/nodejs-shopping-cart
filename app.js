@@ -55,4 +55,15 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+console.log("Your website has started running on port 3000!");
+console.log("");
+console.log("");
+console.log("To find your IP address please run:");
+console.log("");
+console.log("ifconfig | grep inet | awk 'FNR==1{print $2}'");
+console.log("");
+console.log("Connect to the site by entering into your browser's address bar:");
+console.log("[Your IP Address]:3000");
+console.log("");
+
 module.exports = app;
